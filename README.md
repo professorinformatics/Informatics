@@ -12,7 +12,7 @@
 
 | <img width="259" height="342" alt="1607530-264x264-800x800-96x96-560x560" src="https://github.com/user-attachments/assets/8f974d0c-82a5-4ceb-b154-fdab888e4396" /> |  ![1078-03](https://github.com/user-attachments/assets/1c34bc67-1cec-4381-b919-da55e9daa28e) |
 | :--------: | :--------: |
-| **Σκέψου σε Python*** | **Arduino Projects Book** |
+| **Σκέψου σε Python** | **Arduino Projects Book** |
 | Πως να σκέπτεστε σαν επιστήμονας των <br/> υπολογιστών | Starter Kit Projects Book |
 | [Public](https://www.public.gr/product/books/greek-books/computer-science/programming/skepsou-se-python/1607530?utm_source=google&utm_medium=cpc&utm_campaign=PMax_Books_Villains&gad_source=1&gad_campaignid=22693105642&gbraid=0AAAAADynTRYvs03K1oKRgEhkPv462F6N8&gclid=CjwKCAjw-J3OBhBuEiwAwqZ_h2vOcuGHwyTxUvtTuHZ7ggHgjzigpQk9l5qZcUsDw-S0i-7JkNpdkhoC6XAQAvD_BwE) [Κλειδάριθμος](https://www.klidarithmos.gr/skepsou-se-python/) | [Arduino Store](https://store.arduino.cc/products/arduino-starter-kit-multi-language?variant=54912049774967) [Grobotronics](https://grobotronics.com/arduino-starter-kit-el.html) |
 
