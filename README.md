@@ -30,7 +30,8 @@
 - Chrome, Edge, Firefox Dev Tools
 - [Arduino Starter Kit](https://store.arduino.cc/products/arduino-starter-kit-multi-language?variant=54912049774967)
 - [Arduino IDE](https://www.arduino.cc/en/software/)
-
+- [.NET Fiddle](https://dotnetfiddle.net/)
+  
 ### Για προχωρημένους μαθητές
 
 - [Visual Studio Code]()
