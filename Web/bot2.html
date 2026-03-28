@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>Τεχνική Υποστήριξη</title>
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		var responses = ["Αυτό ακούγεται περίεργο. Μπορείτε μου δώσετε περισσότερες λεπτομέρειες;",
+            "Είστε ο πρώτος πελάτης που παραπονιέται γι' αυτό. Τι έκδοση Windows έχετε;",
+            "Αυτό ακούγεται ενδιαφέρον, πείτε μου περισσότερα...",
+            "Χρειάζεται να μου περιγράψετε καλύτερα το πρόβλημα.",
+            "Ελέγξατε αν όλα τα αρχεία DLL βρίσκονται στον φάκελο εγκατάστασης;",
+            "Η απάντηση βρίσκεται στο εγχειρίδιο. Το έχετε διαβάσει;",
+            "Αυτή είναι η σωστή λειτουργία. Δεν αποτελεί πρόβλημα!",
+            "Μπορείτε να εξηγήσετε το πρόβλημα με περισσότερες λεπτομέρειες;"];
+
+		function getResponse() {
+			debugger;
+			var index = Math.floor(Math.random() * responses.length);
+			var div = document.getElementById('response');
+			div.innerHTML += responses[index] + '<br/>';
+		}
+
+	  </script>
+ </head>
+ <body> 	
+ 	<div class="container">
+	 	<h1>Τεχνική Υποστήριξη</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="form-group">
+					<label for="question">Πως μπορώ να σας βοηθήσω;</label>
+					<input type="text" class="form-control" id="question" placeholder="γράψτε την ερώτησή σας ...">
+				</div>			  
+				<div class="form-group">
+					<button type="submit" class="btn btn-warning" onclick="getResponse()">Αποστολή</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div id="response"></div>
+			</div>
+		</div>
+	</div>
+ </body> 
+</html>

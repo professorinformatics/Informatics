@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Κρεμάλα</title>
+ </head>
+ <body>
+ 	<h1>Κρεμάλα!</h1>
+
+	<script>
+	var words = [
+		"javascript",
+		"monkey",
+		"amazing",
+		"pancake"
+	];
+
+	var word = words[Math.floor(Math.random() * words.length)];
+
+	var answerArray = [];
+	for (let i=0; i<word.length; i++) {
+		answerArray[i] = "_";
+	}
+
+	var remainingLetters = word.length;
+
+	while (remainingLetters > 0)	{
+		alert(answerArray.join(' '));
+		var guess = prompt('Μάντεψε ένα γραμμά ή πάτα Cancel για να σταματήσεις.');
+		if (guess === null)		{
+			break;
+		} else if (guess.length !== 1)		{
+			alert('Πρέπει να επιλέξεις ένα γράμμα μόνο.');
+		} else {
+			for (let j=0; j<word.length; j++) {
+				if (word[j] === guess) {
+					answerArray[j] = guess;
+					remainingLetters--;
+				}
+			}
+		}
+	}
+
+	alert(answerArray.join(' '));
+	alert('Μπράβο! Η λέξη ήταν ' + word);
+	</script>
+ </body>
+</html>

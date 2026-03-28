@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript">
+		function score() {
+			let a1 = +document.getElementById("a1").value;
+			let a2 = +document.getElementById("a2").value;
+			let a3 = +document.getElementById("a3").value;
+			let ascore = a1 + a2 * 2 + a3 * 3;
+			
+			let b1 = +document.getElementById("b1").value;
+			let b2 = +document.getElementById("b2").value;
+			let b3 = +document.getElementById("b3").value;
+			let bscore = b1 + b2 * 2 + b3 * 3;
+
+			let winner = document.getElementById("winner");
+
+			if (ascore > bscore)
+			{
+				winner.value = "ΟΜΑΔΑ Α";
+				console.log(winner.value);
+			}
+			else
+			{
+				winner.value = "ΟΜΑΔΑ Β";
+				console.log(winner.value);
+			}
+		}
+	</script>
+ </head>
+ <body>
+	<h1>ΟΜΑΔΑ Α</h1>	
+	ΒΟΛΕΣ: <input type="number" id="a1" name="a1"><br/>
+	ΔΙΠΟΝΤΑ: <input type="number" id="a2" name="a2"><br/>
+	ΤΡΙΠΟΝΤΑ: <input type="number" id="a3" name="a3"><br/>
+	<h1>ΟΜΑΔΑ Β</h1>
+	ΒΟΛΕΣ: <input type="number" id="b1" name="b1"><br/>
+	ΔΙΠΟΝΤΑ: <input type="number" id="b2" name="b2"><br/>
+	ΤΡΙΠΟΝΤΑ: <input type="number" id="b3" name="b3"><br/>
+	<br/>
+	ΝΙΚΗΤΗΣ: <input type="text" id="winner" name="winner">
+	<br/>
+	<button type="button" onclick="score()">ΒΡΕΣ ΤΟΝ ΝΙΚΗΤΗ</button>
+ </body>
+</html>

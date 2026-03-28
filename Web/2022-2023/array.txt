@@ -1,0 +1,17 @@
+var numbers = [];
+for (var i = 0; i < 10; i++) {
+    var n = Math.floor(Math.random() * 100)+1;
+    numbers.push(n);
+}
+console.log(numbers);
+for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+        numbers[i] *= 2;
+    } else {
+        numbers[i] /= 2;
+    }
+}
+console.log(numbers);
+
+---
+

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#difficulty-article.hidden, #play-article.hidden, #result-article.hidden {
+    display: none;
+}
+
+#title-display {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 18pt;
+}
+
+#title-display h1 {
+    font-weight: 300;
+}
+
+#title-display h2 {
+    font-weight: 800;
+    color: red;
+}
+
+#difficulty-display h2, #difficulty-display h1 {
+    position: relative;
+    left: 42.5vw;
+}
+
+#difficulty-display p {
+    text-align: center;
+    font-size: 8pt;
+}
+
+#difficulty-display select, #difficulty-display button {
+    position: relative;
+    left: 42.5vw;
+    text-align: center;
+    font-size: 12pt;
+    width: 15vw;
+    height: 5vh;
+}
+
+#play-article {
+    font-size: 18pt;
+}
+
+#top-screen-display {
+    text-align: center;
+}
+
+.buttons {
+    width: 10vw;
+    height: 5vh;
+    font-size: 14pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#game-over-message {
+    text-align: center;
+    font-weight: 600;
+}
+
+#letter-guesser {
+    text-align: center;
+    height: 10vh;
+    position: relative;
+    top: 55vh;
+}
+
+#letter-guess-input {
+    width: 15vw;
+    height: 10vh;
+    font-size: 18pt;
+    text-align: center;
+    bottom: 0;
+}
+
+#view-results {
+    position: relative;
+    left: 44vw;
+    height: 5vh;
+    width: 10vw;
+    font-size: 12pt;
+}
+
+#display-output p {
+    font-size: 16pt;
+}

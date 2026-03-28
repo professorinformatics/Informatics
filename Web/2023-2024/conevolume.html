@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Εμβαδό κώνου</title>
+  <style>
+  	.container {
+		padding: 16px;
+		border-radius: 8px;
+		border: 1px solid lightgray;
+		width: 500px;
+	}
+	.title {
+		color: gray;
+		font-size: x-large;
+	}
+	.image {
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+	table {
+		width: 100%;
+	}
+	table.frm {
+		width: 100%;
+		padding: 11px 0;
+	}
+	.lbl {
+		font-style: italic;
+		font-size: x-large;
+	}
+  </style>
+ </head>
+ <body>
+	<div class="container">
+		<div class="title">
+			Εμβαδό κώνου
+		</div>
+		<div class="image">
+			<img src="conevolume.png"/>
+		</div>
+		<table cellpadding="0" cellspacing="0" border="1">
+			<tbody>
+				<tr>
+					<td style="width:50%">
+						<table cellpadding="0" cellspacing="0" class="frm" border="1">
+							<tbody>
+								<tr>
+									<td style="width:50%"><span class="lbl">r</span></td>
+									<td>
+										<input type="text" id="r"/>
+									</td>
+								</tr>
+								<tr>
+									<td style="width:50%"><span class="lbl">h</span></td>
+									<td>
+										<input type="text" id="h"/>
+									</td>
+								</tr>
+								<tr>
+									<td>&nbsp;</td>
+									<td>
+										<button type="button" onclick="volume()">Εμβαδό</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<td style="text-align:center;">
+						<img src="cone.png"/>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script>
+		function volume() {
+			const pi = 3.14;
+			var r = document.getElementById('r').value;
+			var h = document.getElementById('h').value;
+
+			var v = (pi * r**2 * h)/3;
+
+			alert(v);
+		}
+	</script>
+ </body>
+</html>

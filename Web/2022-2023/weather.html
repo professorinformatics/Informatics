@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Data</title>
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+ </head>
+ <body>
+	<h1>Loading weather data from server</h1>
+ 	Current weather for: <b><span id="weather-name"></span></b>
+	<p id="weather-description"></p>
+	<table>
+		<tr>
+			<td><span id='icon'></span></td>
+		</tr>
+		<tr>
+			<td><span id='main'></span></td>
+		</tr>
+		<tr>
+			<td><span id='descr'></span></td>
+		</tr>
+	</table>
+	<script>
+		$.ajax({
+			url: "https://fcc-weather-api.glitch.me/api/current?lon=22.372999077615354&lat=37.508561521891",
+			method: 'GET',
+			dataType: 'json',
+			success: function(result) {
+				// press F12 to see the result object
+				console.log(result);
+				$('#weather-name').html(result.name);
+			  $('#weather-description').html(result.weather[0].description);
+				$('#icon').html("<img src='" + result.weather[0].icon + "'/>");
+				$('#main').html(result.weather[0].main);
+				$('#descr').html(result.weather[0].description);
+			}
+		});
+	</script>
+ </body>
+</html>

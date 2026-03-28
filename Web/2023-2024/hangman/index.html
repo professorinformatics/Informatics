@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="not giving you that">
+        <link rel="stylesheet" href="styles.css">
+        <title>Guess That Word</title>
+    </head>
+
+    <body>
+        <article id="difficulty-article">
+
+            <div id="title-display">
+                <h1>Guess That</h1>
+                &nbsp;
+                <h2>WORD!</h2>
+            </div>
+
+            <div id="difficulty-display">
+                <select required id="difficulty-options">
+                    <option value="">---Select Your Difficulty---</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                    <option value="Impossible">Impossible</option>
+                </select> <br>
+
+                <button id="start-game">Start Game</button>
+            </div>
+        </article>
+
+        <article id="play-article">
+            <div id="top-screen-display">
+                <span id="category-display"></span> <br>
+
+                <div id="time-display">
+                    <span id="minutes-display" class="time">00</span>:<span id="seconds-display" class="time">00</span>
+                </div>
+
+                <span id="lives-display"></span>
+        
+                <div id="button-container">
+                    <button id="start-time" class="buttons">Resume Time</button>
+                    <button id="stop-time" class="buttons">Stop Time</button>
+                    <button id="reset-game" class="buttons">Reset Game</button>
+                </div>
+            </div>
+
+            <p id="game-over-message">Game Over!</p>
+
+            <button id="view-results">View Results</button>
+
+            <div id="used-letter-display"></div>
+
+            <div id="letter-guesser">
+                <input id="letter-guess-input" type="text" maxlength="1" title="Letters Only" placeholder="Your Letter Guess" oninput="validateInput()" required>
+            </div>
+        </article>
+
+        <article id="result-article">
+            <div id="display-results"></div>
+        </article>
+
+        <script src="game.js"></script>
+        <script src="Arrays.js"></script> 
+    </body>
+</html>

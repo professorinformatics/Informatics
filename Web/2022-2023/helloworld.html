@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+ 	<input type="button" value="Score" onclick="score();"/>
+
+	<script type="text/javascript">
+		var myCrazyObject = {
+				"name": "My Crazy Object",
+				"some array": [7,9, { purpose: "confusion", number: 123 }, 3.3],
+				"random animal": "Banana Shark"
+			};
+
+
+		//var obj = myCrazyObject["some array"][2];
+		//var number = obj.number;
+
+		var number = myCrazyObject["some array"][2].number;
+		console.log(number);
+	</script>
+ </body>
+</html>

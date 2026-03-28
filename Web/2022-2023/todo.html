@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>TODO</title>
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+ </head>
+ <body>
+ 	<h1>TODO</h1>
+  <script>
+		for (var i = 0; i < 3; i++)	{
+			var todo = prompt('What to do? ');
+			$('body').append('<p>' + todo + '</p>');
+		}
+
+		for (var i = 0; i < 3; i++) {
+			$("h1").fadeOut(3000).fadeIn(3000);
+		}
+
+		for (var i = 0; i < 3; i++) {
+			$("h1").slideUp(3000).slideDown(3000);
+		}
+	</script>
+ </body>
+</html>

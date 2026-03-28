@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+ </head>
+ <body>
+	<script type="text/javascript">
+		var secret = Math.floor(Math.random() * 100) + 1;
+		alert('Έχω σκεφτεί έναν αριθμό από το 1 μέχρι το 100. Μπορείς να τον μαντέψεις;');
+		var guess = 0;
+		while (guess != secret) {
+			guess = parseInt(prompt('Δώσε αριθμό: '));			
+			if (guess > secret) {
+				alert('Έδωσες μεγαλύτερο αριθμό');
+			}
+			else if (guess < secret) {
+				alert('Έδωσες μικρότερο αριθμό');
+			}
+			else {
+				alert('Τον μάντεψες!');
+			}
+		}
+	</script>
+ </body>
+</html>

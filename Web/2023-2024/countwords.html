@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>word count</title>
+ </head>
+ <body>
+ 	<input type="text" id="text" />
+	<button type="button" onclick="countWords()">Count</button>
+	<script>
+		function countWords() {
+			var txt = document.getElementById('text').value;
+			var words = txt.trim().split(' ');
+			console.log(words);
+
+			var count = 0;
+			// do not count inline spaces
+			for (var i = 0; i < words.length; i++) {
+				if (words[i].length > 0) {
+					count++;
+				}
+			}
+
+			alert(count);
+		}
+	</script>
+ </body>
+</html>

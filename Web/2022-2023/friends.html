@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>FRIENDS</title>
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+ </head>
+ <body>
+ 	<h1>Hello World!</h1>
+  <script>
+		var friends = ['friend 1', 'friend 2', 'friend 3'];
+		for (var i = 0; i < 3; i++)	{
+			$('body').append('<p>' + friends[i] + '</p>').hide().fadeIn(3000);
+		}
+		$('h1').text('My Friends');
+	</script>
+ </body>
+</html>

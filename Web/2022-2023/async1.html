@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>setInterval</title>
+ </head>
+ <body>
+ 	<h1>F12 > Console > wait 2,5 secs...</h1>
+	<script>
+		var array = [];
+
+		var myInterval = setInterval(function() {
+			array.push('ran');
+		}, 0);
+
+		setTimeout(function() {
+			clearInterval(myInterval);
+			console.log(array);
+		}, 2500);
+	</script>
+ </body>
+</html>
