@@ -34,5 +34,4 @@
   
 ### Για προχωρημένους μαθητές
 
-- [Visual Studio Code]()
 - [Arduino IDE](https://www.arduino.cc/en/software/)
